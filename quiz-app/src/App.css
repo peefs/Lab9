@@ -1,21 +1,36 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: Arial, Arial;
+  color: rgb(255, 255, 255);
+  font-size: 130%;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-image: url('https://4kwallpapers.com/images/walls/thumbs_3t/21456.jpg'); /* Replace with your image URL */
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: fill; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  display: flex; /* Enables Flexbox */
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  height: 100vh; /* Ensures the body takes the full viewport height */
 }
 
 .container {
-  max-width: 600px;
-  margin: 50px auto;
-  padding: 20px;
-  border: 1px solid #ccc;
+  max-width: 400px;
+  padding: 100px;
+  border: 1px solid rgba(0, 0, 0, 0.5); /* Semi-transparent border */
   border-radius: 5px;
-  background-color: #f9f9f9;
+  background: rgba(233, 10, 10, 0.2); /* Semi-transparent background */
+  backdrop-filter: blur(5px); /* Blur effect */
+  -webkit-backdrop-filter: blur(0px); /* For Safari support */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+  text-align: center; /* Centers text inside the container */
 }
 
 h1 {
   text-align: center;
+  color: rgb(233, 214, 214);
+  font-size: 40px;
 }
 
 .options {
@@ -26,13 +41,13 @@ h1 {
 
 .option {
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #000000;
   border-radius: 3px;
   cursor: pointer;
 }
 
 .option:hover {
-  background-color: #f0f0f0;
+  background-color: #000000;
 }
 
 .result {
@@ -44,12 +59,12 @@ h1 {
 button {
   padding: 10px 20px;
   border: none;
-  background-color: #007bff;
-  color: white;
+  background-color: #a5341a;
+  color: rgb(0, 0, 0);
   border-radius: 3px;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #b25c11;
 }

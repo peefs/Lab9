@@ -1,19 +1,29 @@
 body {
+  background-image: url('file:///Users/judiel/Downloads/1239109-3840x2160-desktop-4k-green-forest-wallpaper-photo.jpg');
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #f0f0f0;
+  background-color: #c7e3a4;
 }
 
 .container {
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
+  width: 500px; /* Set a fixed width for a smaller box */
+  height: auto; /* Adjust height based on content */
+  padding: 20px; /* Reduce padding slightly */
+  border-radius: 5px; /* Minimal rounding for a box-like appearance */
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.9);
+  background: linear-gradient(
+    to bottom right, 
+    rgba(95, 190, 136, 0.2), /* Increased transparency */
+    rgba(255, 255, 255, 0.2) /* Increased transparency */
+  ); /* Gradient background */
+  backdrop-filter: blur(10px); /* Blur effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari support */
   text-align: center;
 }
 
@@ -31,11 +41,22 @@ button {
   padding: 8px 16px;
   border-radius: 5px;
   border: none;
-  background-color: #007bff;
+  background-color: rebeccapurple;
   color: #fff;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #ce0e6e;
+}
+
+h1 {
+  font-family: 'Arial', sans-serif; /* Use a modern sans-serif font */
+  font-size: 2.5rem; /* Larger font size for emphasis */
+  font-weight: bold; /* Make the text bold */
+  color: #ffffff; /* A soft blue color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+  text-align: center; /* Center align the text */
+  margin-bottom: 30px; /* Add spacing below the heading */
+  text-transform: uppercase; /* Make all text uppercase */
 }

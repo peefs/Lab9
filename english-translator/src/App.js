@@ -11,7 +11,15 @@ function App() {
     const translations = {
       hello: 'kamusta',
       world: 'mundo',
-      example: 'halimbawa'
+      example: 'halimbawa',
+      love: 'pag-ibig',
+      morning: 'umaga',
+      night: 'gabi',
+      love: 'wala ako nyan',
+      friend: 'kaibigan',
+      family: 'pamilya',
+      food: 'pagkain',
+      water: 'tubig',
       // Add more translations as needed
     };
 

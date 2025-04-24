@@ -2,9 +2,36 @@ import React, { useState } from 'react';
 import './App.css';
 
 const quizData = [
-    { question: 'What is the capital of France?', options: ['Paris', 'London', 'Berlin', 'Madrid'], correctAnswer: 'Paris' },
-    { question: 'What is 2 + 2?', options: ['3', '4', '5', '6'], correctAnswer: '4' },
-    { question: 'Who wrote "Romeo and Juliet"?', options: ['William Shakespeare', 'Charles Dickens', 'Jane Austen', 'Mark Twain'], correctAnswer: 'William Shakespeare' }
+    { 
+        question: 'Which car does Lewis Hamilton drive?', 
+        options: ['Mercedes', 'Ferrari', 'Red Bull', 'McLaren'], 
+        correctAnswer: 'Mercedes' 
+    },
+    { 
+        question: 'What is Max Verstappen\'s nationality?', 
+        options: ['Dutch', 'British', 'German', 'Australian'], 
+        correctAnswer: 'Dutch' 
+    },
+    { 
+        question: 'Which car does Charles Leclerc drive?', 
+        options: ['Ferrari', 'Mercedes', 'Alpine', 'Aston Martin'], 
+        correctAnswer: 'Ferrari' 
+    },
+    { 
+        question: 'What is Fernando Alonso\'s nationality?', 
+        options: ['Spanish', 'Italian', 'French', 'Brazilian'], 
+        correctAnswer: 'Spanish' 
+    },
+    { 
+        question: 'Which car does Lando Norris drive?', 
+        options: ['McLaren', 'Red Bull', 'Ferrari', 'Williams'], 
+        correctAnswer: 'McLaren' 
+    },
+    { 
+        question: 'What is Sergio Perez\'s nationality?', 
+        options: ['Mexican', 'American', 'Canadian', 'Argentinian'], 
+        correctAnswer: 'Mexican' 
+    },
 ];
 
 function App() {
@@ -31,7 +58,7 @@ function App() {
 
     return (
         <div className="container">
-            <h1>Quiz App</h1>
+            <h1>Formula 1 Quiz</h1>
             {showResult ? (
                 <div className="result">
                     <p>Your score: {score} out of {quizData.length}</p>
@@ -55,4 +82,4 @@ function App() {
     );
 }
 
-export default App
+export default App;
